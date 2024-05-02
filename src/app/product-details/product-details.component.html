@@ -1,0 +1,24 @@
+<div>
+  <div nz-row class="gutter-col" [nzGutter]="{ xs: 4, sm: 8, md: 12, lg: 2   }">
+    <div nz-col class="gutter-row"  nzXl="3" nzLg="4" nzMd="6" nzSm="8" nzXs="12" *ngFor="let productyi of productFirstCat">
+      <div class="inner-box">
+        <nz-card style="margin: 10px;" [nzCover]="coverTemplate">
+          <a [routerLink]="['detailpage2',productyi.id]"><nz-card-meta nzTitle={{productyi.name}}
+              nzDescription="main property:{{productyi.mainProperty}}"></nz-card-meta> </a>
+        </nz-card>
+
+        <ng-template #coverTemplate>
+          <img alt="example" src={{productyi.img}} width="200px" height="200px" />
+        </ng-template>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<section class="content">
+  <router-outlet></router-outlet>
+</section>
