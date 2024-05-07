@@ -1,0 +1,1 @@
+inetdeg:string = 'xksxk';
