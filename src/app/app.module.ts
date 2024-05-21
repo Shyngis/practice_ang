@@ -35,7 +35,6 @@ import { HomeComponent } from './home/home.component';
     HeroesComponent,
     HomeComponent
     
-    
   ],
   providers: [
     provideClientHydration(),
